@@ -1,0 +1,12 @@
+nome = [['João Pedro','Jota','Talles'],['Ana','Carol','Jaldo'],['João Paulo','Silvio','Liza'],['Thiago','Allison','Adailton']]
+temas = ['Internet das coisas','Comunicação M2M','Redes de sensores sem fio','API Web','Parser de protocolo']
+grupo = []
+while len(nome) and len(temas)!=0:
+    grupo.append(random.choice(nome))
+    nome.remove(grupo[-1])
+    grupo.append(random.choice(temas))
+    temas.remove(grupo[-1])
+    continue
+print (nome)
+print (temas)
+print (grupo)
